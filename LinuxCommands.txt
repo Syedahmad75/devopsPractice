@@ -1,0 +1,16 @@
+Windows to Linux Copy Files
+pscp -pw Batman@12345678 D:\test.txt.txt syedahmad751@40.122.232.79:/home/syedahmad751
+           Password              Source              Detination
+
+-m command
+
+Linux to Windows Command:
+pscp -pw Batman@12345678 /home/syedahmad751/test.txt.txt syedahmad751@vm-syed-test786.centralus.cloudapp.azure.com:D:/
+
+pscp -P 22 syedahmad751@40.122.232.79:/home/syedahmad751/test.txt.txDt Batman@12345678 D:\test.txt.txt syedahmad751@40.122.232.79:/home/syedahmad751
+
+pscp syedahmad751@vm-syed-test786.centralus.cloudapp.azure.com:D:/ /home/syedahmad751/test.txt.txt
+
+pscp -pw Batman@12345678 syedahmad751@23.99.213.79:"D:/" "/home/syedahmad751/test.txt.txt" -v
+
+pscp  test.txt  syedahmad751@23.99.213.79:D:/ -v
